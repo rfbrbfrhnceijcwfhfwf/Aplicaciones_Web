@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+
+    <title> desarrollo web</title>
+</head>
+
+<body>
+    <!-- seccion inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Hello kitty </h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">Inicio</a></li>
+                            <li><a href="#sobremi">Sobre mi</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#portfolio">Portafolio</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!--icono del menu responsive-->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--ICONOS DE las redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="Bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Nibia Rodriguez</span>, estudiante de software </h2>
+                <p class="descripcion">Hola! Soy Nibia, una estudiante de Ingeniería de Software en la Universidad Eloy
+                    Alfaro de Manta
+                    (ULEAM). Con solo 20 años, combino mi curiosidad técnica con un enfoque creativo para resolver
+                    problemas a través del
+                    desarrollo de software</p>
+                <a href="#portfolio">Ir a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion sobre mi  -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="ji.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola. soy <span>Nibia Rodriguez</span></h2>
+            <h3>Estudiante de la carrera de software</h3>
+            <p>Soy una estudiante y me encantaria aprender cosas nuevas .</p>
+            <p>(●'◡'●)/ >
+                <a href="cv.pdf" download>Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- seccion servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Por el momento ninguno </h4>
+                <p>En el momento no tengo servicios disponibles, pero estoy en proceso de aprender y mejorar mis
+                    habilidades para ofrecer servicios de calidad en el futuro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECcION HABILIDADES -->
+    <section class="contenedor-skills" id="skills">
+        <h2 class="titulo-seccion">HABILIDADES</h2>
+        <div class="skills">
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista">Python</span></p>
+                    <span class="porcentaje">75%</span>
+                </div>
+                <div class="barra">
+                    <div class="progreso python"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECcION PORTAFOLIO -->
+    <section id="portfolio" class="seccion-portafolio">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">MIS PROYECTOS</h2>
+            <div class="filtros">
+                <button class="filtro-btn active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="web">Web</button>
+                <button class="filtro-btn" data-filter="python">Python</button>
+                <button class="filtro-btn" data-filter="otros">Otros</button>
+            </div>
+
+            <div class="galeria-proyectos">
+                <!-- Proyecto 1 - Web -->
+                <div class="proyecto" data-categoria="web">
+                    <div class="contenedor-imagen">
+                        <img src="ho.jpeg" alt="Descripción proyecto web" class="imagen-proyecto">
+                    </div>
+                    <div class="overlay">
+                        <h3>Proyecto Web 1</h3>
+                        <p>ejemplos</p>
+                        <a href="#" class="btn-visitar">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Python -->
+                <div class="proyecto" data-categoria="python">
+                    <div class="contenedor-imagen">
+                        <img src="hi.jpeg" alt="Descripción proyecto Python" class="imagen-proyecto">
+                    </div>
+                    <div class="overlay">
+                        <h3>Proyecto Python</h3>
+                        <p>ejemplos</p>
+                        <a href="#" class="btn-visitar">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 - Otros -->
+                <div class="proyecto" data-categoria="otros">
+                    <div class="contenedor-imagen">
+                        <img src="pi.jpeg" alt="Descripción otro proyecto" class="imagen-proyecto">
+                    </div>
+                    <div class="overlay">
+                        <h3>Otro Proyecto</h3>
+                        <p>ejemplos</p>
+                        <a href="#" class="btn-visitar">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-section">Contáctanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="#" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" required>
+                    <input type="email" placeholder="Correo Electrónico" class="input-mitad" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto" class="input-full" required>
+                </div>
+                <div class="fila">
+                    <textarea placeholder="Tu Mensaje" class="input-full" rows="5" required></textarea>
+                </div>
+                <div class="fila">
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript para el filtrado del portafolio
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filtro-btn');
+            const projects = document.querySelectorAll('.proyecto');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    projects.forEach(project => {
+                        if (filter === 'todos' || project.getAttribute('data-categoria') === filter) {
+                            project.style.display = 'block';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Smooth scrolling para los enlaces del menú
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

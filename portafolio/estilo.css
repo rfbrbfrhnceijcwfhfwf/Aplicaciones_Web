@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: linear-gradient(rgba(21, 19, 19, 0.8), rgba(194, 160, 160, 0.7)), url("iu.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 80px;
+    /* Para compensar el header fixed */
+}
+
+/* Header */
+#inicio header {
+    background-color: rgba(28, 3, 3, 0.392);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio header h1 {
+    text-align: center;
+    color: #4b022b;
+    font-weight: 600;
+    /* Usando un peso disponible */
+}
+
+#inicio header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio header nav ul li a {
+    text-decoration: none;
+    color: hsl(0, 2%, 66%);
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+#inicio header nav ul li a:hover {
+    color: rgb(244, 2, 244);
+}
+
+/* ... (código anterior hasta .redes a) ... */
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: rgba(165, 112, 203, 0.375);
+    display: inline-block;
+    margin: 12px;
+    transition: 0.5s;
+    /* Corregido: 0.5s en lugar de 5s */
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: rgb(206, 32, 180);
+}
+
+/* ¡Aquí faltaba esta llave! */
+
+/* ... (resto del código) ... */
+
+/* Contenido principal */
+#inicio .presentacion {
+    max-width: 1100px;
+    height: calc(100vh - 80px);
+    margin: auto;
+    color: #060606;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#inicio .presentacion .Bienvenidos {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 200;
+    /* Light */
+}
+
+#inicio .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    /* Semi-bold */
+}
+
+#inicio .presentacion h2 span {
+    font-size: 25px;
+    color: #b91974;
+    font-weight: 400;
+    /* Regular */
+}
+
+#inicio .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #b91974;
+    border-radius: 50px;
+    color: aliceblue;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #7e2f5c7f;
+}
+
+#icono-nav {
+    color: aqua;
+    display: none;
+}
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #4a0e30;
+    display: flex;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(115, 59, 75, 0.255);
+}
+
+#sobremi .sobremi {
+    margin: 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #b91974;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: black;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #4b022b;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(32, 115, 187);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #b91974;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #ce7aa9;
+    color: rgb(200, 108, 108);
+}
+
+#servicios {
+    padding: 100px 15px;
+    text-align: center;
+    border: #10020a;
+}
+
+#servicios .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #702b525b;
+    text-decoration-thickness: 5px;
+}
+
+#servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#servicios .fila .servicio {
+    max-width: 350px;
+    /* Changed from 350% to 350px */
+    background-color: #b9197458;
+    margin: 0 5px;
+    border-radius: 5px;
+    /* Changed from border-right to border-radius */
+    padding: 20px;
+    transition: 0.5s;
+}
+
+#servicios .fila .servicio:hover {
+    background-color: #a1638651;
+    color: white;
+    transform: translateY(-5px);
+    /* Added hover effect */
+    box-shadow: 0 10px 20px rgba(185, 25, 116, 0.3);
+}
+
+#servicios .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #c44e9191;
+    padding: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    /* Centers icon vertically */
+}
+
+#servicios .fila .servicio h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#servicios .fila .servicio p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ESTILOS PARA LA SECCIÓN DE HABILIDADES */
+.contenedor-skills {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #67287a67;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.titulo-seccion::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #8741695b;
+    margin: 15px auto 0;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill .info p {
+    font-weight: 600;
+    color: #333;
+}
+
+.skill .info .porcentaje {
+    font-weight: 600;
+    color: #ce5f9ea3;
+}
+
+.barra {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #b919741a;
+    transition: width 1s ease-in-out;
+}
+
+.python {
+    width: 75%;
+}
+
+/* Efecto hover para la barra */
+.skill:hover .progreso {
+    background-color: #14438a64;
+}
+
+/* ESTILOS GENERALES */
+.seccion-portafolio {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ESTILOS DEL TÍTULO */
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #5712399a;
+    position: relative;
+}
+
+.titulo-seccion::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #b91974;
+    margin: 15px auto 0;
+}
+
+/* FILTROS */
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filtro-btn {
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #b91974;
+    color: #b91974;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.filtro-btn.active,
+.filtro-btn:hover {
+    background-color: #b91974;
+    color: white;
+}
+
+/* GALERÍA DE PROYECTOS */
+.galeria-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.proyecto {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.proyecto:hover .imagen-proyecto {
+    transform: scale(1.1);
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(140, 40, 96, 0.536);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* BOTONES */
+.btn-visitar {
+    padding: 10px 25px;
+    background-color: #b91974;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-visitar:hover {
+    background-color: #8a1457;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#contacto .titulo-section {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+}
+
+#contacto .titulo-section::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ed4f79;
+    margin: 15px auto;
+}
+
+.contenedor-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.fila {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-mitad,
+.input-full {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.input-mitad {
+    width: 48%;
+}
+
+.input-full {
+    width: 100%;
+}
+
+.input-mitad:focus,
+.input-full:focus {
+    outline: none;
+    border-color: #ed6eb4;
+    box-shadow: 0 0 5px rgba(191, 116, 229, 0.337);
+}
+
+textarea.input-full {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #ff006689;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+    background-color: #e952ee7e;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .mitad {
+        flex-direction: column;
+    }
+
+    .input-mitad {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #contacto .titulo-section {
+        font-size: 2rem;
+    }
+}
