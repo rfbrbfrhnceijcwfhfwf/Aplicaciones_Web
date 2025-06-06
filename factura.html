@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Factura Electrónica - Ecuador</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            padding: 30px;
+        }
+
+        .factura {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .info {
+            margin-top: 20px;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        .totales td {
+            font-weight: bold;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="factura">
+        <h1>Factura Electrónica</h1>
+        <div class="info">
+            <p><strong>Factura Nº:</strong> 000127</p>
+            <p><strong>Fecha y hora:</strong> <span id="fecha-hora"></span></p>
+            <p><strong>País:</strong> Ecuador</p>
+        </div>
+
+        <h2>Datos del Cliente</h2>
+        <div class="info">
+            <p><strong>Nombre:</strong> Daniela Torres</p>
+            <p><strong>Cédula/RUC:</strong> 1728392010</p>
+            <p><strong>Dirección:</strong> Av. Amazonas y Colón, Quito</p>
+            <p><strong>Correo:</strong> danitorres@example.com</p>
+        </div>
+
+        <h2>Detalle de la Compra</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cant.</th>
+                    <th>Descripción</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Auriculares Bluetooth</td>
+                    <td>$35.00</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Funda de celular</td>
+                    <td>$8.50</td>
+                    <td>$17.00</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Cargador portátil 10000mAh</td>
+                    <td>$25.00</td>
+                    <td>$25.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="totales">
+                    <td colspan="3" class="text-right">Subtotal</td>
+                    <td>$77.00</td>
+                </tr>
+                <tr class="totales">
+                    <td colspan="3" class="text-right">IVA (12%)</td>
+                    <td>$9.24</td>
+                </tr>
+                <tr class="totales">
+                    <td colspan="3" class="text-right">Total a pagar</td>
+                    <td>$86.24</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="info" style="margin-top: 30px; text-align: center;">
+            <p>Gracias por su compra.</p>
+            <p><em>Este es un documento ficticio generado con fines demostrativos.</em></p>
+        </div>
+    </div>
+
+    <script>
+        const fechaHora = new Date().toLocaleString('es-EC', {
+            dateStyle: 'full',
+            timeStyle: 'short'
+        });
+        document.getElementById("fecha-hora").textContent = fechaHora;
+    </script>
+
+</body>
+
+</html>
