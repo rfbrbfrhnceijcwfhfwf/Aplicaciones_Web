@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Vite + TS</title>
+</head>
+
+<body>
+    <p> holis </p>
+    <form id="form">
+        <input type="text" class="border border-gray300 p-2 rounded w-full" placeholder="nombre">
+        <br>
+        <input type="email" class="infoContacto2" placeholder="correo">
+        <br>
+        <input type="tel" class="infoContacto3" placeholder="telefono">
+        <br>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            type="submit">Enviar</button>
+    </form>
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Gap es el espacio que hay entre las columnas -->
+        <!-- grid cols es para indicar el numero de columnas -->
+        <div class="bg-blue-300 p-4">1</div>
+        <div class="bg-blue-400 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+        <div class="bg-blue-300 p-4">4</div>
+        <div class="bg-blue-400 p-4">5</div>
+        <div class="bg-blue-500 p-4">6</div>
+        <p id="nombre"></p>
+        <p id="correo"></p>
+        <p id="telefono"></p>
+    </div>
+</body>
+
+</html>
