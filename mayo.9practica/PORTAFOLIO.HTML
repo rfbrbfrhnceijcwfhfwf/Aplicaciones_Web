@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibia Rodríguez - Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .profile-pic {
+            border: 4px solid #f55bc9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .progreso {
+            height: 10px;
+            background-color: #3bf6f6;
+            border-radius: 5px;
+        }
+
+        .python {
+            width: 75%;
+        }
+
+        .proyecto {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(246, 59, 234, 0.9);
+            color: rgba(236, 96, 241, 0.334);
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .proyecto:hover .overlay {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-xl font-bold">Hello Kitty</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="hover:text-blue-200">Inicio</a>
+                <a href="#sobremi" class="hover:text-blue-200">Sobre mí</a>
+                <a href="#servicios" class="hover:text-blue-200">Servicios</a>
+                <a href="#portfolio" class="hover:text-blue-200">Portafolio</a>
+                <a href="#contacto" class="hover:text-blue-200">Contacto</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="https://www.facebook.com/" class="hover:text-blue-200"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" class="hover:text-blue-200"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <button id="menu-button" class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 p-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#inicio" class="text-white hover:text-blue-200">Inicio</a>
+                <a href="#sobremi" class="text-white hover:text-blue-200">Sobre mí</a>
+                <a href="#servicios" class="text-white hover:text-blue-200">Servicios</a>
+                <a href="#portfolio" class="text-white hover:text-blue-200">Portafolio</a>
+                <a href="#contacto" class="text-white hover:text-blue-200">Contacto</a>
+                <div class="flex space-x-4 pt-2">
+                    <a href="https://www.facebook.com/" class="text-white hover:text-blue-200"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="text-white hover:text-blue-200"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="text-white hover:text-blue-200"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de presentación -->
+    <section id="inicio" class="py-16 bg-gradient-to-r from-blue-600 to-blue-500 text-white">
+        <div class="container mx-auto px-4">
+            <div class="presentacion text-center">
+                <p class="text-xl mb-2">Bienvenidos</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Soy <span class="border-b-2 border-white">Nibia
+                        Rodríguez</span>, estudiante de software</h2>
+                <p class="text-lg max-w-2xl mx-auto">Hola! Soy Nibia, una estudiante de Ingeniería de Software en la
+                    Universidad Eloy Alfaro de Manta (ULEAM). Con solo 20 años, combino mi curiosidad técnica con un
+                    enfoque creativo para resolver problemas a través del desarrollo de software.</p>
+                <a href="#portfolio"
+                    class="inline-block mt-6 bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition duration-300">Ir
+                    a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobremi" class="py-12 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+                <img src="n.jpg" alt="Foto de Nibia" class="rounded-lg shadow-lg w-64 h-64 object-cover">
+            </div>
+            <div class="md:w-1/2 md:pl-8">
+                <h2 class="text-2xl font-bold mb-4">Hola. soy <span class="text-blue-600">Nibia Rodríguez</span></h2>
+                <h3 class="text-xl mb-4 text-gray-600">Estudiante de la carrera de software</h3>
+                <p class="mb-4">Soy una estudiante y me encantaría aprender cosas nuevas.</p>
+                <p class="mb-4">(●'◡'●)/ ></p>
+                <a href="cv.pdf" download
+                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Descargar
+                    CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Servicios</h2>
+            <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-start">
+                    <span class="text-blue-600 text-2xl mr-4"><i class="fa-solid fa-code"></i></span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Por el momento ninguno</h3>
+                        <p class="text-gray-600">En el momento no tengo servicios disponibles, pero estoy en proceso de
+                            aprender y mejorar mis habilidades para ofrecer servicios de calidad en el futuro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">HABILIDADES</h2>
+            <div class="max-w-md mx-auto">
+                <div class="skill mb-6">
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">Python</span>
+                        <span class="font-medium">75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="progreso python rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portfolio" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">MIS PROYECTOS</h2>
+
+            <div class="flex justify-center space-x-4 mb-8">
+                <button class="filtro-btn active px-4 py-2 bg-blue-600 text-white rounded"
+                    data-filter="todos">Todos</button>
+                <button class="filtro-btn px-4 py-2 bg-gray-300 rounded hover:bg-blue-600 hover:text-white transition"
+                    data-filter="web">Web</button>
+                <button class="filtro-btn px-4 py-2 bg-gray-300 rounded hover:bg-blue-600 hover:text-white transition"
+                    data-filter="python">Python</button>
+                <button class="filtro-btn px-4 py-2 bg-gray-300 rounded hover:bg-blue-600 hover:text-white transition"
+                    data-filter="otros">Otros</button>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Proyecto 1 - Web -->
+                <div class="proyecto" data-categoria="web">
+                    <div class="contenedor-imagen">
+                        <img src="Michi Programador.jpeg" alt="Descripción proyecto web"
+                            class="w-full h-48 object-cover">
+                    </div>
+                    <div class="overlay">
+                        <h3 class="text-xl font-bold mb-2">Proyecto Web 1</h3>
+                        <p class="mb-4">ejemplos</p>
+                        <a href="#" class="text-white hover:underline">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Python -->
+                <div class="proyecto" data-categoria="python">
+                    <div class="contenedor-imagen">
+                        <img src="Gato en una PC.jpeg" alt="Descripción proyecto Python"
+                            class="w-full h-48 object-cover">
+                    </div>
+                    <div class="overlay">
+                        <h3 class="text-xl font-bold mb-2">Proyecto Python</h3>
+                        <p class="mb-4">ejemplos</p>
+                        <a href="#" class="text-white hover:underline">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 - Otros -->
+                <div class="proyecto" data-categoria="otros">
+                    <div class="contenedor-imagen">
+                        <img src="descarga (1).jpeg" alt="Descripción otro proyecto" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="overlay">
+                        <h3 class="text-xl font-bold mb-2">Otro Proyecto</h3>
+                        <p class="mb-4">ejemplos</p>
+                        <a href="#" class="text-white hover:underline">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Contáctanos ahora</h2>
+
+            <div class="max-w-md mx-auto">
+                <form action="#" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" placeholder="Nombre Completo"
+                                class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Correo Electrónico"
+                                class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Asunto"
+                            class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required>
+                    </div>
+                    <div>
+                        <textarea placeholder="Tu Mensaje"
+                            class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Enviar
+                            Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Nibia Rodríguez. Todos los derechos reservados.</p>
+            <p class="mt-2 text-blue-200">Bienvenidos</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil
+        document.getElementById('menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Filtrado de proyectos
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filtro-btn');
+            const projects = document.querySelectorAll('.proyecto');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-blue-600', 'text-white'));
+                    filterButtons.forEach(btn => btn.classList.add('bg-gray-300'));
+
+                    // Agregar clase active al botón clickeado
+                    button.classList.add('active', 'bg-blue-600', 'text-white');
+                    button.classList.remove('bg-gray-300');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    projects.forEach(project => {
+                        if (filter === 'todos' || project.getAttribute('data-categoria') === filter) {
+                            project.style.display = 'block';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+
+                        // Cerrar menú móvil si está abierto
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
